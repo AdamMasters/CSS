@@ -1,0 +1,122 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ───────────────────────────────────────────── */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(0,0,0,.05);
+}
+
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
+}
+
+.logo-icon {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+  font-family: 'Cascadia Code', 'Fira Code', monospace;
+  background: var(--primary-light);
+  padding: 5px 10px;
+  border-radius: 8px;
+  line-height: 1;
+}
+
+.logo-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  display: block;
+  line-height: 1.2;
+}
+
+.logo-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  display: block;
+}
+
+/* ── Tab nav ──────────────────────────────────────────── */
+.tab-nav {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  padding: 0 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  scrollbar-width: none;
+  border-top: 1px solid var(--border);
+}
+.tab-nav::-webkit-scrollbar { display: none; }
+
+.tab-btn {
+  flex-shrink: 0;
+  padding: 9px 15px;
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all .15s;
+  white-space: nowrap;
+  position: relative;
+  top: 1px;
+}
+.tab-btn:hover { color: var(--primary); background: var(--primary-light); }
+.tab-btn.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  font-weight: 700;
+}
+
+/* ── Main content ─────────────────────────────────────── */
+.app-main {
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 36px 28px;
+}
+
+/* ── Progress bar ─────────────────────────────────────── */
+.progress-bar {
+  height: 3px;
+  background: var(--primary);
+  transition: width .3s ease;
+}
+
+/* ── Tweaks ─────────────────────────────────────── */
+.left-gap {
+  margin-left: 15px;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 800px) {
+  .playground-body { grid-template-columns: 1fr; }
+  .playground-controls { border-right: none; border-bottom: 1px solid var(--border); }
+  .app-main { padding: 20px 16px; }
+  .module-title { font-size: 26px; }
+}
