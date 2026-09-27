@@ -34,7 +34,7 @@ An interactive, self-paced web application for teaching CSS to A level students.
 
 ## Overview
 
-**CSS Fundamentals** is a purpose-built interactive teaching tool for T Level Digital Production, Design and Development students. It replaces static slides with live, hands-on exploration: students drag sliders, toggle properties, and watch both the visual output and the generated CSS code update in real time.
+**CSS Fundamentals** is a purpose-built interactive teaching tool for A Level Web Development students. It replaces static slides with live, hands-on exploration: students drag sliders, toggle properties, and watch both the visual output and the generated CSS code update in real time.
 
 The application is designed to be used:
 - **In class** as a teacher-led demonstration tool projected onto a board
