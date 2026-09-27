@@ -1,5 +1,4 @@
 import { useState, lazy, Suspense } from 'react'
-import CMFloatAd from './components/CMFloatAd'
 import './App.css'
 
 const BoxModel    = lazy(() => import('./modules/BoxModel'))
@@ -12,6 +11,7 @@ const Colors      = lazy(() => import('./modules/Colors'))
 const Transitions = lazy(() => import('./modules/Transitions'))
 const Responsive  = lazy(() => import('./modules/Responsive'))
 const Modals      = lazy(() => import('./modules/Modals'))
+const ConfidenceCheckin = lazy(() => import('./modules/ConfidenceCheckin'))
 
 const MODULES = [
   { id: 'box-model',    label: '1. Box Model',      component: BoxModel },
@@ -24,6 +24,7 @@ const MODULES = [
   { id: 'transitions',  label: '8. Animations',      component: Transitions },
   { id: 'responsive',   label: '9. Responsive',      component: Responsive },
   { id: 'modals',       label: '10. Modals',         component: Modals },
+  { id: 'confidence',   label: '11. Confidence Check-in', component: ConfidenceCheckin },
 ]
 
 export default function App() {
@@ -36,18 +37,11 @@ export default function App() {
       <header className="app-header">
         <div className="header-inner">
           <div className="logo">
-            <span className="logo-icon">
-              <img src="/exeter-college-black-text.svg" width="150" alt="Exeter College" />
-              <img className="left-gap"src="/favicon.svg" width="64" alt="Course icon" />
-            </span>
-            <div>
-              <span className="logo-title">CSS Fundamentals</span>
-              <span className="logo-sub">T Level Interactive Course</span>
-            </div>
+            <img className="course-mark" src="/favicon.svg" alt="CSS Fundamentals" />
           </div>
         </div>
-        <div style={{ height: 3, background: 'var(--border)' }}>
-          <div className="progress-bar" style={{ width: `${progress}%` }} />
+        <div className="progress-track">
+          <div className="progress-bar" style={{ transform: `scaleX(${progress / 100})` }} />
         </div>
         <nav className="tab-nav" role="tablist" aria-label="Course modules">
           {MODULES.map((mod, i) => (
@@ -68,7 +62,10 @@ export default function App() {
           <ActiveModule />
         </Suspense>
       </main>
-      <CMFloatAd color="var(--primary)"   />
+      <footer className="app-footer">
+        <p>Designed by Adam Masters</p>
+        <p>Course materials based on CSS Fundamentals by Simon Rundell, Exeter College.</p>
+      </footer>
     </div>
   )
 }

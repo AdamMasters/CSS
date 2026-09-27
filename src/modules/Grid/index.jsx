@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Playground from '../../components/Playground'
 import Slider from '../../components/Slider'
-import Toggle from '../../components/Toggle'
 
 const CELL_COLORS = ['#6c47ff','#ff6b6b','#20c997','#ffd43b','#4dabf7','#f783ac','#a9e34b','#ff922b','#cc5de8','#74c0fc','#63e6be','#ffa94d']
 
