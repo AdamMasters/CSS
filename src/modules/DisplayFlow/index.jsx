@@ -22,23 +22,6 @@ export default function DisplayFlow() {
       : "apply normally"
   } */`
 
-  const itemStyle = {
-    display,
-    width: display === 'inline' ? undefined : itemW,
-    height: display === 'inline' ? undefined : itemH,
-    borderRadius: 6,
-    fontWeight: 700,
-    fontSize: 13,
-    fontFamily: 'monospace',
-    color: '#fff',
-    padding: display === 'inline' ? '4px 10px' : undefined,
-    display: display,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: (display === 'block') ? 8 : undefined,
-    marginRight: (display === 'inline' || display === 'inline-block') ? 8 : undefined,
-  }
-
   return (
     <div className="module">
       <div className="module-header">

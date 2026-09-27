@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Playground from '../../components/Playground'
 import Slider from '../../components/Slider'
 import Toggle from '../../components/Toggle'
-import Select from '../../components/Select'
 
 function hslToRgb(h, s, l) {
   s /= 100; l /= 100
@@ -28,7 +27,6 @@ export default function Colors() {
   const [color3, setColor3] = useState('#ffd43b')
   const [stops, setStops] = useState(2)
 
-  const [rgb] = [hslToRgb(hue, sat, lit)]
   const hex = toHex(...hslToRgb(hue, sat, lit))
   const [r, g, b] = hslToRgb(hue, sat, lit)
   const colorStr = `hsl(${hue}, ${sat}%, ${lit}%)`

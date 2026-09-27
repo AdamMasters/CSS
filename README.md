@@ -26,6 +26,7 @@ An interactive, self-paced web application for teaching CSS to T Level (Level 3)
    - [Module 10 — Modals & Overlays](#module-10--modals--overlays)
 8. [Common Student Misconceptions](#common-student-misconceptions)
 9. [Assessment Ideas](#assessment-ideas)
+   - [WJEC A2 Digital Technology — Assessment Pack](#wjec-a2-digital-technology--assessment-pack)
 10. [Customising the App](#customising-the-app)
 11. [License](#license)
 
@@ -67,6 +68,7 @@ The application is designed to be used:
 | 8 | Transitions & Animations | transition properties, timing functions, @keyframes, animation properties |
 | 9 | Responsive Design | viewport units, clamp(), media queries, container queries |
 | 10 | Modals & Overlays | fixed positioning, z-index, backdrop-filter, animation, `<dialog>` element |
+| 11 | Confidence Check-in | self-assessment slider per topic, no CSS marking involved |
 
 ---
 
@@ -574,6 +576,20 @@ Always mention the `<dialog>` element when teaching modals. A `<div>` modal requ
 
 ## Assessment Ideas
 
+### WJEC A2 Digital Technology — Assessment Pack
+
+This app is also used to support **WJEC Digital Technology (A level), Unit 4: Digital Solutions** — the 45-hour, 30%-weighted NEA in which students design, build, test and present a transactional website.
+
+The [`assessment/`](assessment/README.md) folder contains a structured, classroom-ready pack aligned to Unit 4 of the WJEC specification:
+
+- **6 tasks** ([`assessment/tasks/`](assessment/tasks)) spanning design & usability, accessible semantic HTML/CSS, data capture & validation, multi-item transaction data modelling (ERD/3NF/SQL), integration/maintainability, and testing/refinement/justification — mixing core and stretch/challenge difficulty, each sized for a single lesson or double lesson
+- **A matching mark scheme for every task** ([`assessment/mark-schemes/`](assessment/mark-schemes)) — formative classroom rubrics with indicative mark bands, mapped to AO2 (investigate/analyse/evaluate) and AO3 (plan/design/create/develop)
+- **An exemplars library** ([`assessment/exemplars/`](assessment/exemplars/README.md)) — empty by default, designed to be filled with anonymised student work across future cohorts
+
+Start at [`assessment/README.md`](assessment/README.md) for the full overview, task index and how the folder scales year on year.
+
+A [printable Confidence Check-in](assessment/confidence-checkin.md) self-assessment sheet is also included — matching the interactive **Module 11 — Confidence Check-in** built into the app — useful as a before/after starter and plenary either side of the six tasks.
+
 ### Formative — in-class exploration tasks
 
 **Module 1 — Box Model challenge**
@@ -643,15 +659,17 @@ All colours are CSS custom properties in `src/index.css`:
 
 Change `--primary` to rebrand for a different institution or course theme.
 
-### Replacing the college logo
+### Replacing the course icon
 
-Replace `public/exeter-college-black-text.svg` with your own SVG logo. Update the `width` attribute in `src/App.jsx` line 41 if needed.
+Replace `public/favicon.svg` with your own course icon. It is used in both the page header and browser tab.
 
 ---
 
 ## License
 
-Copyright © 2025 Simon Rundell / Exeter College
+Designed by Adam Masters. Course materials based on CSS Fundamentals by Simon Rundell / Exeter College.
+
+Original course material copyright © 2025 Simon Rundell / Exeter College.
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 

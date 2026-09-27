@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Playground from '../../components/Playground'
 import Slider from '../../components/Slider'
 import Select from '../../components/Select'
