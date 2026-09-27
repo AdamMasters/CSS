@@ -1,6 +1,6 @@
-# CSS Fundamentals — T Level Interactive Course
+# CSS Fundamentals — A2 Interactive Web Design
 
-An interactive, self-paced web application for teaching CSS to T Level (Level 3) students. Built with React + Vite, it provides ten guided modules, each with live playgrounds, interactive controls, and real-time code generation.
+An interactive, self-paced web application for teaching CSS to A level students. Built with React + Vite, it provides ten guided modules, each with live playgrounds, interactive controls, and real-time code generation.
 
 ---
 
